@@ -1,0 +1,43 @@
+<html>
+<head>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+  
+<body>
+  <div class="flex-container">
+    <div class="flex-container" id="bubble">
+      <h1>Pomodoro Timer</h1>  
+      <h2 id="timer"></h2>
+      
+      <div class="button-group">
+       <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle btn-block" id="chooseLength" type="button" data-toggle="dropdown">
+            Choose Length <span class="caret"></span>
+          </button>
+            <ul class="dropdown-menu">
+              <li id="1"><a href="#">01:00</a></li>
+              <li id="5"><a href="#">05:00</a></li>
+              <li id="10"><a href="#">10:00</a></li>
+              <li id="15"><a href="#">15:00</a></li>
+              <li id="20"><a href="#">20:00</a></li>
+              <li id="25"><a href="#">25:00</a></li>
+              <li id="30"><a href="#">30:00</a></li>
+              <li id="35"><a href="#">35:00</a></li>
+              <li id="40"><a href="#">40:00</a></li>
+              <li id="45"><a href="#">45:00</a></li>              
+            </ul>
+        </div> <!-- end dropdown div -->
+        <button type="button" class="btn btn-secondary" id="start">Start Timer</button>
+        <button type="button" class="btn btn-secondary" id="reset">Reset Timer</button>
+       
+      </div> <!-- end vertical button group -->
+    </div> <!-- end bubble div -->
+  </div> <!-- end container -->
+  <script src="script.js"></script>
+</body>
+</html>
