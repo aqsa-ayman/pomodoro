@@ -119,6 +119,7 @@ $(document).ready(function() {
      $("#start").on("click", function() {
        if ($("h2").text().length !== 0) {
          setCountDown = setInterval(countDown, 1000);
+         $("#start").prop("disabled", true);
        }
      });
 
@@ -129,6 +130,7 @@ $(document).ready(function() {
          $("#timer").html("--"+storeValues+":"+"00"+"--");
          minutes = storeValues;
          seconds = 00;
+         $("#start").prop("disabled", false);
        }
        
      });
