@@ -8,11 +8,14 @@ body {text-align: center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
+      overflow-x: none;
+      overflow-y: none;
       }
 
 .flex-container {display: flex;
                  width: 100vw;
-                 height: 100vh;
+                 height: 80vh;
+                 flex-direction: column;
                  justify-content: center;
                  align-items: center;
                  flex-wrap: wrap;}
@@ -23,12 +26,14 @@ body {text-align: center;
          border-radius: 50%;
          align-items: center;
          box-shadow: 4px 10px 10px grey;
+         overflow: none;
          }
 
 h1 {font-size: 3em !important;
     color: white !important;
     text-shadow: 2px 2px 2px black;
-    padding-top: 80px;}
+    padding-top: 80px;
+  }
 
 h2 {font-size: 4em !important;
     text-shadow: 2px 2px 2px black;
@@ -39,5 +44,28 @@ h2 {font-size: 4em !important;
 
 .btn {box-shadow: 2px 2px 5px black;
       margin-bottom: 10px !important;}
+
+ul {
+  overflow: auto;
+}
+
+@media only screen and (max-width: 769px) {
+  h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  #bubble {
+    width: 80vw;
+    height: 80vw;
+  }
+  .button-group {
+    padding-bottom: 10px;
+  }
+}
+
+
 
 

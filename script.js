@@ -120,6 +120,7 @@ $(document).ready(function() {
        if ($("h2").text().length !== 0) {
          setCountDown = setInterval(countDown, 1000);
          $("#start").prop("disabled", true);
+         $("#chooseLength").prop("disabled", true);
        }
      });
 
@@ -131,6 +132,7 @@ $(document).ready(function() {
          minutes = storeValues;
          seconds = 00;
          $("#start").prop("disabled", false);
+         $("#chooseLength").prop("disabled", false);
        }
        
      });
