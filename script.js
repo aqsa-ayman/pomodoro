@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+  $(window).on('load', function() {
+    $("#splash_page").hide();
+  });
     
     var setCountDown; // will store result of our setInterval function
     var storeValues; // will store initial minutes so we can reset for every time option
